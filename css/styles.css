@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000; /* Ensure header and footer stay on top */
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 100px; /* Increase padding to match header height */
+    padding-bottom: 60px; /* Increase padding to match footer height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in height calculations */
+    text-align: center;
+}
+
+.dashboard-content, .form-container, .content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px; /* Adjust for the dashboard */
+    box-sizing: border-box;
+    margin-top: 20px; /* Add margin to separate from header */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="date"], input[type="file"], textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+button, .btn {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+button:hover, .btn:hover {
+    background-color: #0056b3;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.option:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.option h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.option p {
+    margin: 10px 0 0;
+}
+
+.shared-content ul, .announcements ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.shared-content li, .announcements li {
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shared-content li a, .announcements li a {
+    color: #00FF00; /* Change link color to a lighter shade */
+    text-decoration: none;
+}
+
+.shared-content li a:hover, .announcements li a:hover {
+    text-decoration: underline;
+}
+
+.shared-content li span {
+    color: #FFFFFF; /* Change filename color to a lighter shade */
+}
+
+.nav-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.nav-options .btn {
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Styles for the content section */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.content-box {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px solid #007BFF; /* Add border */
+}
+
+.content-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content-box li {
+    margin-bottom: 10px;
+}
+
+.announcement-list {
+    padding: 0;
+}
+
+.announcement-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #007BFF;
+}
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
